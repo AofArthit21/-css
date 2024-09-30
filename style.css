@@ -269,14 +269,18 @@
         width: auto;
         padding: 0 16px 32px 16px;
     }
-    
+
     .information img {
         max-width: 576px;
         width: 100%;
         height: auto;
-        padding: 1rem 0;
+        padding: 16px 0 16px 0;
         flex-shrink: 1;
       }
+
+    .extra {
+         padding: 16px 0 0 0;
+      } 
 
     .mobile-image {
         display: block;
@@ -335,7 +339,7 @@
         .course {
         background-color: white;
         border-top: 1px solid lightgray;
-        border-bottom:1 px solid lightgray ;
+        border-bottom:1px solid lightgray ;
         }
     
         .course h2 {
@@ -350,7 +354,7 @@
         width: 100%;
         padding: 0;
         flex-direction: column;
-        margin-bottom: x;
+        margin-bottom: 8px;
         }
 
         .subject {
@@ -360,12 +364,12 @@
         }
 
         .subject-info {
-        margin:8px 16px;
+        margin:8px 0;
         background-color: lightgray;
         }
 
         .last {
-            margin-bottom: 32px;
+            margin-bottom: 24px;
         } 
 
 
