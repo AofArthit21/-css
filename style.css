@@ -237,4 +237,43 @@
     font-family: serif;
     color: blue;
   }
- 
+  
+  @media only screen and (max-width: 880px) {
+    .information .large-info {
+        display: none;
+    }
+
+    .information .small-image {
+        display: none;
+    }
+    
+    .information .small-info {
+        width: 100%;
+        padding: 0;
+    }
+    .information .small-block {
+        border-bottom: none;
+        margin: 0 auto;
+    }
+
+    .small-block .flex-column {
+        width: auto;
+        padding: 0 16px 32px 16px;
+    }
+    
+    .information img {
+        max-width: 576px;
+        width: 100%;
+        height: auto;
+        padding: 1rem 0;
+        flex-shrink: 1;
+      }
+
+    .mobile-image {
+        display: block;
+    }
+
+    .information h4, .information p, .information span {
+        padding-left: 16px;
+    }
+  }
