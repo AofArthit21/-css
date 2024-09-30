@@ -1,0 +1,197 @@
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ h1 {
+    font-size: 44px;
+ }
+
+ h2 {
+    font-size: 36px;
+ }
+
+ h3 {
+    font-size: 28px;
+ }
+ 
+ h4 {
+    font-size: 24px;
+ }
+
+ h5 {
+    font-size: 20px;
+ }
+
+ h6 {
+    font-size: 16px;
+ }
+
+ ul {
+    list-style: none;
+ }
+
+ p {
+    font-family: serif;
+ }
+
+ .main{
+    position: relative;
+    top: 64px;
+    width: 100%;
+ }
+
+ .flex {
+    display: flex;
+ }
+
+ .flex-column {
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .align-center {
+    align-items: center;
+ }
+ 
+ .large-info {
+    width: 60%;
+    margin: 32px 24px;
+ }
+
+ .large-image img, 
+ .large-image video {
+    width: 100%;
+ }
+
+ .small-info {
+    width: 40%;
+    padding-top: 16px;
+ }
+
+ .small-block .flex-column,
+ .hero .flex-column {
+    justify-content: center;
+ }
+
+ .small-block .flex-column {
+    width: 65%;
+ }
+ 
+ .small-image {
+    width: 35%;
+    margin: 16px;
+ }
+
+ .small-image img {
+    width: 100%;
+    height: auto;
+ }
+
+ .small-block p {
+    margin: 8px 0;
+ }
+
+ /* Header */
+  header{
+    height: 64px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+  }
+  
+  header div.flex {
+    flex-grow: 1;
+  }
+
+  header .desktop img {
+    height: 32px;
+    width: auto;
+    margin-left: 24px;
+  }
+
+  header span {
+    font-size: 20px;
+  }
+
+  nav.desktop {
+    margin-right: 16px;
+  }
+
+  .desktop ul li {
+    padding: 0 8px;
+  }
+
+  .mobile {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .mobile .flex {
+        justify-content: space-around;
+    }
+
+    .desktop {
+        display: none;
+    }
+  }
+
+  /* Hero Section */
+  .hero {
+    background-color: lightgray;
+  }
+
+  .hero h1, .hero h4 {
+    padding-right: 32px;
+    padding-bottom: 24px;
+  }
+
+  .hero h4{
+    font-family: serif;
+  }
+
+  .hero h5 {
+    background-color: dimgray;
+    color: white;
+    padding: 8px 0;
+    text-align: center;
+    max-width: 80%;
+  }
+  
+  .hero h5:hover {
+    background-color: grey;
+  }
+
+  @media only screen and  (max-width: 880px) {
+    .hero {
+        flex-direction: column;
+    } 
+
+    .hero .large-info {
+        width: 100%;
+        margin: 0 0 32px 0;
+    }
+    
+    .hero .small-info {
+        width: auto;
+        padding-top: 0;
+        margin: 0 16px;
+    }
+
+    .hero h1 {
+        padding-bottom: 32px;
+    }
+
+    .hero h5 {
+        align-self: center;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+  }
