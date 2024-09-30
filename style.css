@@ -237,6 +237,10 @@
     font-family: serif;
     color: blue;
   }
+
+  .small-block:hover {
+    background-color: lightgray;
+  }
   
   @media only screen and (max-width: 880px) {
     .information .large-info {
@@ -277,3 +281,71 @@
         padding-left: 16px;
     }
   }
+
+  /* course section */
+
+  .course {
+    background-color: lightgray;
+  }
+
+  .course h2 {
+    padding-top: 32px;
+    text-align: center;
+  }
+
+ .subjects {
+    padding:16px 56px 16px 56px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1168px;
+    margin: 0 auto;
+ }
+
+ .subject {
+    max-width: 320px;
+    margin: 16px;
+    background-color: white;
+ }
+
+ .subject img{
+    max-width: 100%;
+    height: auto;
+ }
+
+ .subject-info {
+    padding: 16px;
+ }
+
+.subject-info span {
+    padding: 8px 0;
+    display: block;
+ }
+
+ .subject-info p {
+    padding-bottom: 8px;
+ }
+
+@media only screen  and  (max-width: 500px){
+    .course {
+        background-color: white;
+        border-top: 1px solid lightgray;
+        border-bottom:1 px solid lightgray ;
+    }
+    
+    .course h2 {
+        margin-bottom: 8px;
+    }
+
+    .subject img, .subject span, .subject p {
+        display: none;
+    }
+
+    .subjects {
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+
+}
+ 
