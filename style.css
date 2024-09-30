@@ -294,18 +294,19 @@
   }
 
   .subjects {
-    padding: 16px 72px; 
+    padding: 16px 56px;
     flex-wrap: wrap;
     justify-content: space-between; 
-    width: calc(100% - 144px); 
-    margin: 0 auto;
+    max-width: calc(100% - 112px);
+    margin: 0 auto; 
  }
  
  .subject {
-    flex: 1 1 calc(33.333% - 32px);
+    flex: 1 1 calc(33.333% - 32px); 
     margin: 16px;
     background-color: white;
  }
+ 
  
  .subject img{
     max-width: 100%;
@@ -357,6 +358,11 @@
         margin:8px 16px;
         background-color: lightgray;
         }
+
+        .last {
+            margin-bottom: 32px;
+        } 
+
     }
 
     /* Thesis section */
