@@ -325,27 +325,54 @@
     padding-bottom: 8px;
  }
 
-@media only screen  and  (max-width: 500px){
-    .course {
+    @media only screen  and  (max-width: 500px){
+        .course {
         background-color: white;
         border-top: 1px solid lightgray;
         border-bottom:1 px solid lightgray ;
-    }
+        }
     
-    .course h2 {
+        .course h2 {
         margin-bottom: 8px;
-    }
+        }
 
-    .subject img, .subject span, .subject p {
+        .subject img, .subject span, .subject p {
         display: none;
-    }
+        }
 
-    .subjects {
+        .subjects {
         width: 100%;
         padding: 0;
         flex-direction: column;
-        margin-bottom: 24px;
+        margin-bottom: x;
+        }
+
+        .subject {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        }
+
+        .subject-info {
+        margin:8px 16px;
+        background-color: lightgray;
+        }
     }
 
-}
+    /* Thesis section */
+
+    .thesis {
+        border-bottom: 1px solid lightgray;
+    }
+
+    .thesis h2 {
+        padding-top: 32px;
+        text-align: center;
+    }
+    .large-info {
+        padding: 24px 0 8px;
+    }
+
+    
+
  
