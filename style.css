@@ -293,20 +293,21 @@
     text-align: center;
   }
 
- .subjects {
-    padding:16px 56px 16px 56px;
+  .subjects {
+    padding: 16px 72px; 
     flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
+    justify-content: space-between; 
+    width: calc(100% - 144px); 
     margin: 0 auto;
  }
-
+ 
  .subject {
-    max-width: 450px;
+    flex: 1 1 calc(33.333% - 32px);
     margin: 16px;
     background-color: white;
  }
-
+ 
+ 
  .subject img{
     max-width: 100%;
     height: auto;
